@@ -1,0 +1,1 @@
+﻿addHttpRequestHandler(      '/wzorek',               // (string) regex used to filter the requests to be intercepted      'httpRequests/requestHandlers.js',  // (string) name of the file where the request handler function is specified      'hello'         // (string) name of the request handler function);

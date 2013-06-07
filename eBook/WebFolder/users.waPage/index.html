@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Main Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"
+        />
+        <meta name="generator" content="Wakanda GUIDesigner" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="wakanda-version" content="4 build 4.131311" />
+        <meta name="wakanda-build" content="4.131311" />
+        <meta name="WAF.config.loadCSS" id="waf-palette" content="/walib/WAF/widget/palette/css/widget-palette-default.css"
+        />
+        <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="array"
+        data-source="usersList" data-lib="WAF" data-id="usersList" data-dataType="string"
+        data-autoLoad="true" data-attributes="name:string,fullName:string" content="usersList"
+        />
+        <meta name="WAF.config.datasources" data-type="dataSource" data-source-type="object"
+        data-source="user" data-lib="WAF" data-id="user" data-dataType="string"
+        data-autoLoad="true" data-attributes="name:string,fullName:string,id:number,password:string"
+        content="user" />
+        <meta name="WAF.config.loadCSS" id="waf-interface-css" content="styles/index.css"
+        />
+        <meta name="WAF.config.loadCSS" id="waf-project-css" content="/application.css"
+        />
+        <meta name="WAF.config.loadJS" id="waf-script" content="scripts/index.js"
+        />
+        <meta name="WAF.config.rpc.file" content="/rpc-proxy/Users?namespace=users"
+        />
+    </head>
+    
+    <body id="waf-body" data-workspace-width="0" data-workspace-orientation="portrait"
+    data-workspace-height="0" data-viewport-width="device-width" data-viewport-minimum-scale="1.0"
+    data-viewport-maximum-scale="1.0" data-viewport-initial-scale="1.0" data-type="document"
+    data-theme="default" data-rpc-validation="false" data-rpc-namespace="rpc"
+    data-rpc-activate="false" data-platform="desktop" data-lib="WAF" data-group="[['dialog1','container1','richText1','image1','container2','container3','bSave','button4']]"
+    data-apple-meta-tags-status-bar="default" class="default" style="visibility:hidden;">
+        <div id="dataGrid1" data-type="dataGrid" data-selection-mode="single"
+        data-readOnly="true" data-lib="WAF" data-label-position="top" data-label=""
+        data-footer-text="User(s)" data-footer-hide="true" data-display-error="true"
+        data-constraint-top="true" data-constraint-left="true" data-column="[{'sourceAttID':'name','colID':'name','width':'167','title':'Name'},{'sourceAttID':'fullName','colID':'fullName','width':'150','title':'Full%20Name'}]"
+        data-binding="usersList" class="waf-widget waf-dataGrid default inherited          waf-dataGrid-level-0 waf-level-0"></div>
+        <div id="dialog1" data-type="dialog" data-linked-tag="container1,richText1,image1,button1,button2,button3,container2,container3,button4,button5"
+        data-lib="WAF" data-hideOnOutsideClick="false" data-front="true" data-constraint-top="true"
+        data-constraint-left="true" class="waf-widget waf-dialog default inherited   waf-dialog-level-0 waf-level-0 waf-container">
+            <div id="container1" data-type="container" data-lib="WAF" data-constraint-top="true"
+            data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="false"
+            class="waf-widget waf-container default inherited    waf-container-level-1 waf-level-1 waf-widget-header waf-dialog-header ">
+                <div id="richText1" data-type="richText" data-target="_blank" data-plainText="true"
+                data-overflow="Hidden" data-lib="WAF" data-label-position="left" data-label=""
+                data-constraint-top="true" data-constraint-right="true" data-constraint-left="true"
+                data-constraint-bottom="false" data-autoWidth="false" class="waf-widget waf-richText default inherited    waf-richText-level-0 waf-level-0 waf-dialog-header-title ">Dialog Title</div>
+                <div id="image1" data-type="image" data-target="_blank"
+                data-src="/walib/WAF/widget/dialog/images/alert.png" data-lib="WAF" data-label-position="left"
+                data-label="" data-fit="0" data-constraint-top="true" data-constraint-right="false"
+                data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-image default inherited    waf-image-level-0 waf-level-0 waf-dialog-header-icon "></div>
+            </div>
+            <div id="container2" data-type="container" data-lib="WAF" data-constraint-top="true"
+            data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="true"
+            class="waf-widget waf-container default inherited   waf-container-level-1 waf-level-1 waf-widget-body waf-dialog-body">
+                <input type="text" id="nameEntry" data-type="textField" data-password="false"
+                data-multiline="false" data-lib="WAF" data-label-position="left" data-label="Name : "
+                data-datapicker-on="false" data-datapicker-icon-only="false" data-constraint-top="true"
+                data-constraint-right="false" data-constraint-left="true" data-constraint-bottom="false"
+                data-binding="user.name" class="waf-widget waf-textField default inherited    waf-textField-level-0 waf-level-0 "
+                />
+                <label id="label1" for="nameEntry" data-valign="middle" data-type="label"
+                data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false"
+                data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label default inherited  waf-label-textField waf-label-level-0 waf-level-0 ">Name :</label>
+                <input type="text" id="surnameEntry" data-type="textField"
+                data-readOnly="false" data-password="false" data-multiline="false" data-lib="WAF"
+                data-label-position="left" data-label="Full name : " data-datapicker-on="false"
+                data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false"
+                data-constraint-left="true" data-constraint-bottom="false" data-binding="user.fullName"
+                class="waf-widget waf-textField default inherited          waf-textField-level-0 waf-level-0 "
+                />
+                <label id="label2" for="surnameEntry" data-valign="middle" data-type="label"
+                data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false"
+                data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label default inherited  waf-label-textField waf-label-level-0 waf-level-0 ">Full name :</label>
+                <input value="[user.password]" type="text" id="userPassword"
+                data-type="textField" data-readOnly="false" data-password="false" data-multiline="false"
+                data-lib="WAF" data-label-position="left" data-label="Password : " data-datapicker-on="false"
+                data-datapicker-icon-only="false" data-constraint-top="true" data-constraint-right="false"
+                data-constraint-left="true" data-constraint-bottom="false" data-binding="user.password"
+                class="waf-widget waf-textField default inherited           waf-textField-level-0 waf-level-0 "
+                />
+                <label id="label4" for="userPassword" data-valign="middle" data-type="label"
+                data-margin="5" data-lib="WAF" data-constraint-top="true" data-constraint-right="false"
+                data-constraint-left="true" data-constraint-bottom="false" class="waf-widget waf-label default inherited  waf-label-textField waf-label-level-0 waf-level-0 ">Password :</label>
+            </div>
+            <div id="container3" data-type="container" data-lib="WAF" data-constraint-top="false"
+            data-constraint-right="true" data-constraint-left="true" data-constraint-bottom="true"
+            class="waf-widget waf-container default inherited    waf-container-level-1 waf-level-1 waf-widget-footer waf-dialog-footer ">
+                <button id="button4" data-type="button" data-text="Cancel" data-target="_blank"
+                data-lib="WAF" data-constraint-top="true" data-constraint-right="true"
+                data-constraint-left="false" data-constraint-bottom="false" data-action="simple"
+                class="waf-widget waf-button default inherited    waf-button-level-0 waf-level-0 "></button>
+                <button id="bSave" data-type="button" data-text="Zapisz" data-target="_blank"
+                data-lib="WAF" data-constraint-top="true" data-constraint-right="true"
+                data-constraint-left="false" data-constraint-bottom="false" data-action="simple"
+                class="waf-widget waf-button default inherited  waf-button-level-0 waf-level-0 "></button>
+                <button id="button6" data-type="button" data-text="Delete" data-target="_blank"
+                data-lib="WAF" data-constraint-top="true" data-constraint-right="true"
+                data-constraint-left="true" data-constraint-bottom="false" data-action="simple"
+                class="waf-widget waf-button default inherited        waf-button-level-0 waf-level-0 "></button>
+                <button id="button1" data-type="button" data-text="New User"
+                data-target="_blank" data-lib="WAF" data-constraint-top="true" data-constraint-right="true"
+                data-constraint-left="true" data-constraint-bottom="false" data-action="simple"
+                class="waf-widget waf-button default inherited               waf-button-level-0 waf-level-0 "></button>
+            </div>
+        </div>
+        <script type="text/javascript" src="/waLib/WAF/Loader.js"></script>
+    </body>
+
+</html>

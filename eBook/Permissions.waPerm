@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><permissions>
+<allow action="read" groupName="Użytkownicy" groupID="3DB4491A7C17488BA7D101A183D2B558" resource="Model.EBook" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="create" groupName="Admin" groupID="01000000000000000000000000000000" resource="Model.EBook" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="execute" groupName="Admin" groupID="01000000000000000000000000000000" resource="Model.EBook" temporaryForcePermissions="true" type="dataClass"/>
+<allow action="promote" groupName="Admin" groupID="01000000000000000000000000000000" resource="Model.EBook" temporaryForcePermissions="true" type="dataClass"/>
+<allow action="update" groupName="Admin" groupID="01000000000000000000000000000000" resource="Model.EBook" temporaryForcePermissions="false" type="dataClass"/>
+<allow action="remove" groupName="Admin" groupID="01000000000000000000000000000000" resource="Model.EBook" temporaryForcePermissions="false" type="dataClass"/>
+<allow type="module" resource="Users" action="executeFromClient"/>
+<allow type="module" resource="Oferty" action="executeFromClient"/>
+</permissions>
