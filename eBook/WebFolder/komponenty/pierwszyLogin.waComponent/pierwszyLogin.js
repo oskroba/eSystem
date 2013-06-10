@@ -58,6 +58,10 @@ function constructor (id) {
 		
 		if(WAF.directory.loginByPassword(loginName, thePassword)){
 			window.open("/wydawnictwo/","_self");
+		}else{
+			alert("Login niepoprawny");
+			document.getElementById("componentSrodka_tfPass").value="";
+			document.getElementById("componentSrodka_tfLogin").value="";
 		}
 		
 		
