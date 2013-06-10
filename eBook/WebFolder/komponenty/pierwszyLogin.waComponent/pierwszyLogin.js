@@ -13,17 +13,46 @@ function constructor (id) {
 	this.load = function (data) {// @lock
 
 	// @region namespaceDeclaration// @startlock
-	var bPrawy = {};	// @button
-	var bLewy = {};	// @button
+	var bLogout = {};	// @button
+	var bLogin = {};	// @button
+	var bReset = {};	// @button
 	var richText1 = {};	// @richText
 	var loginowy_widget = {};	// @login
 	// @endregion// @endlock
 
 	// eventHandlers// @lock
 
-	bPrawy.click = function bPrawy_click (event)// @startlock
+	
+	var curSess = WAF.directory.currentUser();
+		//debugger;
+	if(curSess === null){
+			$$(getHtmlId('bLogout')).hide();
+		}else{
+			$$(getHtmlId('bLogin')).hide();	
+			$$(getHtmlId('tfLogin')).hide();
+			$$(getHtmlId('tfPass')).hide();
+		
+	}	
+	
+	
+	
+	
+	
+
+	bLogout.click = function bLogout_click (event)// @startlock
 	{// @endlock
-		debugger;
+
+		
+		if(	WAF.directory.logout()){
+			window.open("/index","_self");
+		}
+		
+		
+	};// @lock
+
+	bLogin.click = function bLogin_click (event)// @startlock
+	{// @endlock
+		//debugger;
 		var loginName = $$(getHtmlId('tfLogin')).getValue();
 		var thePassword = $$(getHtmlId('tfPass')).getValue();
 		
@@ -34,7 +63,7 @@ function constructor (id) {
 		
 	};// @lock
 
-	bLewy.click = function bLewy_click (event)// @startlock
+	bReset.click = function bReset_click (event)// @startlock
 	{// @endlock
 		var odpowiedz = confirm("Czy na pewno chcesz usunąć stare i otrzymać eMailem nowe hasło?. \n Tej czynności nie można będzie odwołać.");
 		if(odpowiedz){
@@ -64,8 +93,9 @@ function constructor (id) {
 	};// @lock
 
 	// @region eventManager// @startlock
-	WAF.addListener(this.id + "_bPrawy", "click", bPrawy.click, "WAF");
-	WAF.addListener(this.id + "_bLewy", "click", bLewy.click, "WAF");
+	WAF.addListener(this.id + "_bLogout", "click", bLogout.click, "WAF");
+	WAF.addListener(this.id + "_bLogin", "click", bLogin.click, "WAF");
+	WAF.addListener(this.id + "_bReset", "click", bReset.click, "WAF");
 	WAF.addListener(this.id + "_richText1", "click", richText1.click, "WAF");
 	WAF.addListener(this.id + "_loginowy_widget", "login", loginowy_widget.login, "WAF");
 	// @endregion// @endlock
