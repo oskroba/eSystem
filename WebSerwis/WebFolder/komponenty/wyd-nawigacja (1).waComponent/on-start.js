@@ -1,0 +1,1 @@
+﻿//debugger;//$comp.sources.ankiety.newEntity();		
