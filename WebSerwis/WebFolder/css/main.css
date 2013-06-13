@@ -1,0 +1,862 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   
+input[type="text"], input[type="checkbox"], textarea {
+  outline: none;
+}
+   
+.right{
+	text-align:right;
+	}
+	
+p {
+	text-align:justify;	
+	}
+
+a {
+	color:#01c700;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#01c700;
+	text-decoration:underline;
+}
+#header{
+	height:100px;
+	}
+
+#content{
+	background-color:#eeeeee;
+	width:100%;
+	}
+#footer{
+	height:100px;
+	}
+#menu{
+	margin-left:auto;
+	margin-right:auto;
+	width:950px;
+}
+#content-wrapper{
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:10px;
+	padding-bottom:10px;
+	width:950px;
+}
+
+#logo{
+	padding-top:30px;
+	padding-bottom:30px;
+	width:130px;
+	display:inline-block;
+}
+#nav{
+	nav-right:current;
+	padding-top:39px;
+	padding-bottom:39px;
+	display:inline-block;
+	float:right;
+}
+
+#nav a{
+	font-family: 'Exo', sans-serif;
+	font-size:14px;
+	font-weight:700;
+	color:#000000;
+	text-decoration:none;
+	}
+.menu-spacer{
+	padding-left:10px;
+	padding-right:10px;
+	}
+.boxes{
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+	display: block;
+	}
+	
+.box{
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+	background-clip: padding-box;
+	background-color:#FFFFFF;
+	padding: 30px 30px 30px 30px;
+
+	}
+	
+.span50{
+	width:470px;
+	margin-left:10px;
+	margin-bottom:10px;
+	float:left;
+
+	}
+.span50:first-child{
+	width:470px;
+	margin-left:0px;
+	margin-bottom:10px;
+	float:left;
+	}
+	
+.span0{
+	width:960px;
+	margin-bottom:10px;
+	float:left;
+
+	}
+.span1{
+	width:710px;
+	margin-left:10px;
+	margin-bottom:10px;
+	float:left;
+
+	}
+.span2{
+	width:630px;
+	margin-left:10px;
+	margin-bottom:10px;
+	float:left;
+
+	}
+	
+	
+.span3{
+	width:310px;
+	margin-left:10px;
+	margin-bottom:10px;
+	float:left;
+
+	}
+.span3:first-child{
+	width:310px;
+	margin-left:0px;
+	margin-bottom:10px;
+	float:left;
+	}
+	
+.span4{
+	width:230px;
+	margin-left:10px;
+	margin-bottom:10px;
+	float:left;
+
+	}
+.span4:first-child{
+	width:230px;
+	margin-left:0px;
+	margin-bottom:10px;
+	float:left;
+	}
+	
+.span6{
+	width:150px;
+	margin-left:10px;
+	margin-bottom:10px;
+	float:left;
+	}
+.thin_span6{
+	width:140px;
+	margin-left:10px;
+	margin-bottom:10px;
+	float:left;
+	}
+.width_span6{
+	width:160px;
+	margin-left:10px;
+	margin-bottom:10px;
+	float:left;
+	}
+.span6:first-child{
+	width:150px;
+	margin-left:0px;
+	margin-bottom:10px;
+	float:left;
+	}
+	
+	
+.sitemap{
+	color:#666666;
+	}
+	
+.row{
+	display:table;
+	}
+h1 {
+	font-family: 'Exo', sans-serif;
+	padding-bottom:20px;
+	border-bottom:1px;
+	border-bottom-color:#01c700;
+	border-bottom-style:solid;
+	}
+	
+h2 {
+	font-family: 'Exo', sans-serif;
+	padding-bottom:10px;
+	border-bottom:1px;
+	border-bottom-color:#01c700;
+	border-bottom-style:solid;
+	}
+
+.control-group{
+	display:table;
+	}
+.control-label {
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 45px;
+}
+.controls {
+    margin-left: 55px;
+}
+#inputEmail {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border:1px;
+	border-style:solid;
+	border-color:#999;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+	width:180px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    vertical-align: middle;
+}
+
+.control-group-login{
+	display:table;
+	}
+.control-label-login {
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 45px;
+}
+.controls-login {
+    margin-left: 55px;
+}
+
+/* ==========================================================================
+   Formularz kontaktowy
+   ========================================================================== */
+
+
+.control-group{
+	display:table; 
+	}
+.control-label {
+    float: left;
+    padding-top: 5px;
+    text-align: right;
+    width: 100px;
+}
+.controls {
+    margin-left: 110px;
+}
+#inputEmail {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border:1px;
+	border-style:solid;
+	border-color:#999;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+	width:180px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    vertical-align: middle;
+}
+#inputTemat {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border:1px;
+	border-style:solid;
+	border-color:#999;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+	width: 520px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    vertical-align: middle;
+}
+#inputImie {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border:1px;
+	border-style:solid;
+	border-color:#999;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+	width:180px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    vertical-align: middle;
+}
+#inputNazwisko {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border:1px;
+	border-style:solid;
+	border-color:#999;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+	width:180px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    vertical-align: middle;
+}
+#inputFirma {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border:1px;
+	border-style:solid;
+	border-color:#999;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+	width:180px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    vertical-align: middle;
+}
+#inputCaptcha {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border:1px;
+	border-style:solid;
+	border-color:#999;
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+	width:180px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    vertical-align: middle;
+}
+select {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border:1px;
+	border-style:solid;
+	border-color:#999;
+    display: inline-block;
+    font-size: 12px;
+    height: 30px;
+	width:190px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    padding-left: 3px;
+    padding-right: 6px;
+    padding-top: 6px;
+    vertical-align: middle;
+}
+
+textarea {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border:1px;
+	border-style:solid;
+	border-color:#999;
+    display: inline-block;
+    font-size: 12px;
+    height: 80px;
+	width:520px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    vertical-align: middle;
+}
+
+.captcha{
+	margin-left:110px;
+	margin-bottom:10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	border:1px;
+	border-style:solid;
+	border-color:#999;
+	padding:6px;
+	}
+
+.checkbox{
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+	line-height: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    vertical-align: middle;
+	}
+#rejestracja-wybor {
+	margin-left:110px;
+	}
+	
+/* ==========================================================================
+   Koniec Formularza
+   ========================================================================== */
+
+.btn{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	float:right;
+	font-family: 'Exo', sans-serif;
+	font-size: 12px;
+	font-weight:700;
+	text-transform:uppercase;
+    color: #FFF;
+	background-color:#01c700;
+    cursor: pointer;
+	border:none;
+    display: inline-block;
+    line-height: 20px;
+	margin-left:10px;
+    margin-bottom: 0;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+	margin-top:10px;
+    text-align: center;
+	}
+
+.btn-left{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+	float: left;
+	font-family: 'Exo', sans-serif;
+	font-size: 12px;
+	font-weight:700;
+	text-transform:uppercase;
+    color: #FFF;
+	background-color:#01c700;
+    cursor: pointer;
+	border:none;
+    display: inline-block;
+    line-height: 20px;
+	margin-right:10px;
+    margin-bottom: 0;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+	margin-top:10px;
+    text-align: center;
+	}
+	
+#sidenav a{
+	display:block;
+	text-decoration: none;
+	font-family: 'Exo', sans-serif;
+	font-size: 14px;
+	font-weight:700;
+	color:#000;
+	padding-bottom:10px;
+	margin-bottom: -10px;
+	border-bottom:1px;
+	border-bottom-color:#01c700;
+	border-bottom-style:solid;
+	
+	}
+
+#footer a{
+	text-decoration: none;
+	color:#000;
+	padding-bottom:10px;
+	
+	}
+#footer a:hover{
+	text-decoration: none;
+	color:#01c700;
+	padding-bottom:10px;
+	
+	}
+#search {
+	display:inline-block;
+	margin-left:-5px;
+	cursor:pointer;
+	
+}
+
+#search input[type="text"] {
+    background: url(../img/lupa.png) no-repeat 5px 3px;
+	background-color:#eee;
+    border: 1px solid #fff;
+    color: #666;
+    width: 120px;
+    padding: 6px 4px 6px 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+#przypomnieniehasla{
+	padding-left:55px;
+	}
+	
+.ebookeverywhere{
+	font-family: 'Exo';
+	font-weight:700;
+	}
+
+/*#search input[type="text"]:focus {
+    width: 150px;
+    border: 1px solid #fff;
+	color: #666;
+	background-color:#eee;
+	cursor:pointer;
+    }
+
+#search :focus { outline: none; }*/
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
