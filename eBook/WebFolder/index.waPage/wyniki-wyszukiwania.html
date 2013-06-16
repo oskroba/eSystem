@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="css/slides.css">
   <!-- End CSS for slidesjs.com example -->
   <!-- SlidesJS Required: -->
-    <!-- SlidesJS Required: Link to jQuery -->
+	  <!-- SlidesJS Required: Link to jQuery -->
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <!-- End SlidesJS Required -->
 
@@ -37,27 +37,18 @@
       $('#slides').slidesjs({
         width: 940,
         height: 528,
-		navigation: {
-          effect: "fade",
-		  active: false
-        },
-        pagination: {
-          effect: "fade"
-        },
-        effect: {
-          fade: {
-            speed: 400
-          }
-			},
 		play: {
           auto: true,
-		  effect: "fade",
 		  interval: 6000,
           swap: false,
 		  },
+		navigation:{
+			active: false
+		}
       });
     });
   </script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -66,14 +57,11 @@
 
         <!-- Add your site or application content here -->
         <div id="header">
-  <div id="menu">
+        <div id="menu">
         	<div id="logo"><a href="index.html"><img src="img/logo.jpg" /></a></div>
-
-<div id="google">
-
-<script>
+<div id="google"><script>
   (function() {
-    var cx = '011702293013128506242:ltdva9th7va';
+    var cx = '011102883439490783856:nlzsa9ghhs0';
     var gcse = document.createElement('script');
     gcse.type = 'text/javascript';
     gcse.async = true;
@@ -83,31 +71,28 @@
     s.parentNode.insertBefore(gcse, s);
   })();
 </script>
-<gcse:search></gcse:search>
-</div>
-
-
-
+<gcse:searchbox></gcse:searchbox></div>
 <div id="nav">
-<a href="/system/">logowanie</a><img src="img/menu-spacer.gif" class="menu-spacer"/>
-<a href="http://ebook-everywhere.pl:8081/rejestracja">rejestracja</a><img src="img/menu-spacer.gif" class="menu-spacer"/>
+<a href="logowanie.html">logowanie</a><img src="img/menu-spacer.gif" class="menu-spacer"/>
+<a href="rejestracja.html">rejestracja</a><img src="img/menu-spacer.gif" class="menu-spacer"/>
 <a href="informacje.html">informacje</a><img src="img/menu-spacer.gif" class="menu-spacer"/>
 <a href="pomoc.html">pomoc</a><img src="img/menu-spacer.gif" class="menu-spacer"/>
 <a href="kontakt.html">kontakt</a><img src="img/menu-spacer.gif" class="menu-spacer"/>
-<!--<form method="get" action="/search" id="search">-->
-<!--<input name="q" type="text" size="40" placeholder="szukaj..." />-->
-<!--</form>-->
 </div>
-        </div>
+
+</div>
         <div id="content">
         	<div id="content-wrapper">
-            <div id="slides">
-      <a href="jak-to-dziala.html"><img src="img/1.jpg" alt=""></a>
-      <a href="regulamin.html"><img src="img/2.jpg" alt=""></a>
-      <a href="wspolpraca.html"><img src="img/3.jpg" alt=""></a>
-      <a href="rejestracja.html"><img src="img/4.jpg" alt=""></a>
-      <a href="kontakt.html"><img src="img/5.jpg" alt=""></a>
-    </div>
+            <div class="sitemap">strona główna > wyniki wyszukiwania</div>
+			<div class="row">
+            <ul class="boxes">
+            <li class="span0">
+              <div class="box">
+              <h1>wyniki wyszukiwania</h1>
+            <div id="wyniki"><gcse:searchresults></gcse:searchresults></div>
+            </li>
+   	        </ul>
+            </div>
             </div>
         </div>
       <div id="footer">
@@ -142,14 +127,13 @@
           <a href="wspolpraca.html">współpraca</a>
           <a href="o-nas.html">o nas</a>
           <a href="o-systemie.html">o systemie</a>
-          
                
                </li>
                <li class="width_span6">
                <h2>szybki kontakt</h2>
           	    E-<span style="white-space:nowrap">&thinsp;</span>book<span style="white-space:nowrap">&thinsp;</span>Everywhere<span style="white-space:nowrap">&thinsp;</span>Sp.<span style="white-space:nowrap">&thinsp;</span>z<span style="white-space:nowrap">&thinsp;</span>o.o.<br>
 				+48 695 233 470<br>
-				info(ma?pa)ebook-everywhere.pl
+				info@ebook-everywhere.pl
                </li>
             </ul>
             </div>
@@ -159,7 +143,10 @@
 
        
 
-
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
