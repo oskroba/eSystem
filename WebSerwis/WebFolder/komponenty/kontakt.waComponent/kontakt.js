@@ -12,7 +12,7 @@ function constructor (id) {
 
 	this.load = function (data) {// @lock
 //debugger;
-			$comp.sources.rejestracje.newEntity();
+			$comp.sources.ankiety.newEntity();
 			//$comp.sources.rejestracje.sync;
 	// @region namespaceDeclaration// @startlock
 	var comboKategoria = {};	// @combobox
@@ -30,22 +30,19 @@ function constructor (id) {
 
 	button3.click = function button3_click (event)// @startlock
 	{// @endlock
-		$comp.sources.rejestracje.newEntity();
+		$comp.sources.ankiety.newEntity();
 	};// @lock
 
 	button6.click = function button6_click (event)// @startlock
 	{// @endlock
 		//debugger;
 		var testy = true;
-		if (emailSpr($comp.sources.rejestracje.eMail) == false){alert("Niepoprawny e-mail!"); testy = false}
-		if (($comp.sources.rejestracje.Imie) == false){alert("Wypełnij pole Imię!"); testy = false}
-		if (($comp.sources.rejestracje.Nazwisko) == false){alert("Wypełnij pole Nazwisko!"); testy = false}
-		if (($comp.sources.rejestracje.NazwaFirmy) == false){alert("Wypełnij pole Nazwa Firmy!"); testy = false}
-		if (($comp.sources.rejestracje.Miejscowosc) == false){alert("Wypełnij pole Miejscowość!"); testy = false}
-		if (($comp.sources.rejestracje.KodPocztowy) == false){alert("Wypełnij pole Kod Pocztowy!"); testy = false}
-		if (($comp.sources.rejestracje.Ulica) == false){alert("Wypełnij pole Ulica!"); testy = false}
+		if (emailSpr($comp.sources.ankiety.eMail) == false){alert("Niepoprawny e-mail!"); testy = false}
+		if (($comp.sources.ankiety.ImieNazwisko) == false){alert("Wypełnij pole Imię i nazwisko!"); testy = false}
+		if (($comp.sources.ankiety.NazwaFirmy) == false){alert("Wypełnij pole Nazwa Firmy!"); testy = false}
+		if (($comp.sources.ankiety.Temat) == false){alert("Wypełnij pole Temat!"); testy = false}
 		if(testy){
-			$comp.sources.rejestracje.save();
+			$comp.sources.ankiety.save();
 			alert("Dziękujemy!");
 //			location.href = "/"
 			window.history.back();
